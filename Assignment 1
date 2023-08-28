@@ -1,0 +1,106 @@
+fun main() {
+
+    val forMarry = 18
+    val noMarry = 101
+
+    var age = 17
+    val job = true
+
+//    Conditional Statement using range (HomeWork)
+
+    if (age in 0..17){
+        println("You can not get married because you are too younger. Your age is $age, for married your age must be $forMarry or higher" )
+    }else if (age in 18..100){
+        if (job){
+            println("You can married because your age is $age and you have a job")
+        }
+        else{
+            println("Your age is perfect for married but you can't get married because you have no job yet.")
+        }
+    }else{
+        println("You can't get married because, your machine can't be work properly and you should pray for next life")
+        println("Just a jock, Your $noMarry age is too high for marry")
+    }
+
+//
+////    Conditional Statement using if else
+//
+//    if (age >= 18 && age <= 100){
+//
+//        if (job){
+//            println("You can marry because your age is $age and you have a job")
+//        }else{
+//            println("Your age is perfect for marry but you can't get marry because you have no job yet.")
+//        }
+//
+//    }else if (age < 18){
+//        println("You can not get marry because you are too younger your age is $age, for marry you age must be $forMarry or higher")
+//    }else{
+//        println("You can't get marry because, your machine can't be work properly and you should pray for next life")
+//        println("Just a jock, Your $noMarry age is too high for marry")
+//    }
+//
+//
+////    Marry programme using When Condition
+//
+//    when{
+//        age < 18 -> {
+//            println("You can not get marry because you are too younger your age is $age, for marry you age must be $forMarry or higher")
+//        }
+//        job && age < 101 -> {
+//            println("You can marry because your age is $age and you have a job")
+//        }
+//        age > 100 -> {
+//            println("You can't get marry because, your machine can't be work properly and you should pray for next life")
+//            println("Just a jock, Your $noMarry age is too high for marry")
+//        }
+//
+//    }
+
+//    For statements
+
+
+//    var sum = 0
+//
+//    for (i in 1..10 step 3){
+//        sum = sum + i
+//        println(i)
+//    }
+//    println("The sum of i is $sum")
+
+
+////    While Statement
+
+//    val num = 20
+
+//    while (num > 20){
+//        println("$num is Larger than 20")
+//        break
+//    }
+//
+//    when {
+//        num > 20 ->{
+//            println("$num is larger than 20")
+//        }
+//        num == 20 ->{
+//            println("$num is equals to 20")
+//        }
+//        num < 20 -> {
+//            println("$num is less then 20")
+//        }
+//
+//    }
+//
+////    Do while Statement
+//
+//    var no = 18
+//    do {
+//        println("$no is less then 20")
+//        break
+//    }while (no > 20)
+//
+
+}
+
+
+
