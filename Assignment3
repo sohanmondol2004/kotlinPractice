@@ -1,0 +1,103 @@
+fun main() {
+
+//    Collection Exercise
+
+//    Shopping Cart with List
+
+    val cartList: MutableList<String> = mutableListOf("Shirt", "Pant", "t-shirt", "Polo t-shirt")
+
+//    Add a new list for cart
+    cartList.addAll(listOf("Punjabi", "Shoes", "Smart Watch", "glasses"))
+
+//    All items
+    val cartItem = cartText(cartList)
+    println("$cartItem \n")
+
+//    Show third item using index
+    println("The third Item is ${cartList[2]}\n")
+
+//    Remove an item using index
+    cartList.removeAt(3)
+    println("After removed items are $cartList \n" )
+
+//    Replace an item using index
+    cartList[1] = "Jint's"
+    println("After replaced item $cartList \n")
+
+//    After all operations (Add, Removed) all item
+    println("All Items now, $cartList")
+
+
+//some println for new line
+    println()
+    println()
+
+
+
+//    Unique Usernames with Set
+
+    val userNames: MutableSet<Any> = mutableSetOf("Username 1", "Username 2", "Username 3", "Username 4")
+
+//    Add new unique names set
+    userNames.addAll(mutableSetOf("Username 5", "Username 6", "Username 7"))
+
+//    All elements of set
+    val userItems = setText(userNames)
+    println("$userItems \n")
+
+//    Finding on set
+    println("Username 5" in userNames)
+    println()
+
+//    Remove an item using index
+    val remove = "Username 3"
+    userNames.remove(remove)
+    println("After removing $remove new username set is $userNames \n")
+
+
+//    Uses of Map
+
+
+//    Voting Tally map
+
+    val candidate: MutableMap<Any, Any> = mutableMapOf(
+        "Candidate A " to 100, "Candidate B " to 103, "Candidate C " to 95, "Candidate D " to 110)
+
+//    Add new map
+    candidate.putAll(mutableMapOf("Candidate E " to 104, "Candidate F " to 111, "Candidate G " to 99, "Candidate H " to 115))
+
+    val candidateText = votes(candidate)
+    println(candidateText)
+
+//    Remove from map
+    candidate.remove("Candidate C")
+    println("After Removing Candidate C, now Map is $candidate \n")
+
+//    Replace value of D
+    candidate.replace("Candidate D", 500)
+    println("After Replace value of d to 500, new map is $candidate \n")
+
+
+//    show key wise votes
+    println("Candidate A total votes received ${candidate["Candidate A"]}")
+
+
+
+
+
+}
+
+
+
+
+fun cartText(msg:Any){
+    println("All cart item's are $msg")
+
+}
+
+fun setText(msg:Any){
+    println("ALl user names are $msg")
+}
+fun votes(msg:Any){
+    println("All candidates and votes $msg")
+}
