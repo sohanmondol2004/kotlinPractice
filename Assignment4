@@ -1,0 +1,227 @@
+fun main() {
+//  Car Related Start
+    var carEntry = cardBuild()
+    carEntry.carSetup("Tesla", "KT001")
+    carEntry.welcomeMsg()
+    println()
+//  Car Related END
+
+//    Mouse Features Start
+    var mouse1KeyFeature = mouseKey()
+    mouse1KeyFeature.keyFeatures("T-WOLF", "T01-PRO", "Non Mechanical", "Optical", "960", "4")
+    mouse1KeyFeature.callKey()
+
+    var mouse1MainFeature = mouseMain()
+    mouse1MainFeature.mainFeatures("2", "Wired", "110cm")
+    mouse1MainFeature.specialCall()
+
+
+    var mouse1PhysicalFeatures = mousePhysical()
+    mouse1PhysicalFeatures.physicalFeatures("Plastic", "Black and White", "170gm", "Yes")
+    mouse1PhysicalFeatures.physicalCall()
+
+
+    var mouse1Model = mouseModelType()
+    mouse1Model.modelType("T01-SIMPLE", "T01-EXTRA", "T01-PRO")
+    mouse1Model.modelCall()
+
+
+    var mouse1price = mousePrice()
+    mouse1price.modelPrice("320tk BDT", "550tk BDT", "990tk BDT")
+    mouse1price.callPrice()
+
+
+    var mouse1warrantyTimeInfo = mouseWarranty()
+    mouse1warrantyTimeInfo.warranty("2 Year(s)")
+    mouse1warrantyTimeInfo.warrantyCall()
+    
+//    Mouse Features End
+
+
+//    Vivo Y21 Specification Start
+    val mobile = mobileDetails()
+    mobile.callMobileDetails("Vivo", "Y21")
+
+    var cost = price()
+    cost.priceCall()
+
+    val bspecification = basicSpecification()
+    bspecification.basicSpecificationCall()
+
+    
+//    Vivo Y21 Specification End
+
+
+
+
+
+}
+//  Start Car Class
+class cardBuild(){
+
+    var carName: String ? = null
+    var carModel: String ? = null
+
+    fun carSetup(name:String, model:String){
+        carName = name
+        carModel = model
+    }
+    fun welcomeMsg(){
+        println("Welcome to $carName, your  car model is $carModel")
+    }
+
+}
+//  End Car Class
+
+//  Start Mouse Class
+class mouseKey(){
+    var mouseName: String ? = null
+    var mouseModel:String ? = null
+    var mouseType:String ? = null
+    var mouseSensor:String ? = null
+    var mouseDPI:String ? = null
+    var mouseButtons:String ? = null
+
+    fun keyFeatures(name:String, model:String, type:String, sensor:String, dpi:String, buttons:String){
+        mouseName = name
+        mouseModel = model
+        mouseType = type
+        mouseSensor = sensor
+        mouseDPI = dpi
+        mouseButtons = buttons
+    }
+    fun callKey(){
+        println("Key Features")
+        println("Name: $mouseName, Model: $mouseModel, Type: $mouseType, Sensor Type: $mouseSensor, DPI: $mouseDPI, Total Buttons: $mouseButtons")
+        println()
+    }
+}
+
+class mouseMain(){
+    var button: String ? = null
+    var connectionType: String ? = null
+    var cableLength: String ? = null
+
+    fun mainFeatures(tButton: String,cType: String, cLength: String){
+        button = tButton
+        connectionType = cType
+        cableLength = cLength
+    }
+    fun specialCall(){
+        println("Special Features")
+        println("Extra Button: $button, Connection Type: $connectionType, Cable Length: $cableLength")
+        println()
+    }
+}
+
+class mousePhysical(){
+    var bodyType: String ? = null
+    var bodyColor: String ? = null
+    var bodyWeight: String ? = null
+    var rgbSupport: String ? = null
+
+    fun physicalFeatures(bType:String, bColor: String, bWeight: String, lightSupport: String){
+        bodyType = bType
+        bodyColor = bColor
+        bodyWeight = bWeight
+        rgbSupport = lightSupport
+    }
+    fun physicalCall(){
+        println("Physical Features")
+        println("Body Type: $bodyType, Color: $bodyColor, Weight: $bodyWeight, RGB Support: $rgbSupport")
+        println()
+    }
+}
+
+class mouseModelType(){
+    var modelSimple: String ? = null
+    var modelExtra: String ? = null
+    var modelPro: String ? = null
+
+    fun modelType(model1:String, model2:String, model3:String){
+        modelSimple = model1
+        modelExtra = model2
+        modelPro = model3
+    }
+    fun modelCall(){
+        println("Available Model of this Mouse")
+        println("$modelSimple, $modelPro, $modelExtra")
+        println()
+    }
+}
+
+class mousePrice(){
+    var simplePrice:String ? = null
+    var extraPrice:String ? = null
+    var proPrice:String ? = null
+
+    fun modelPrice(model1: String, model2: String, model3: String){
+        simplePrice = model1
+        extraPrice = model2
+        proPrice = model3
+    }
+    fun callPrice(){
+        println("Price list of this mouse by model")
+        println(" T01-SIMPLE is $simplePrice\n T01-EXTRA is $extraPrice \n T01-PRO is $proPrice")
+        println()
+    }
+}
+
+
+class mouseWarranty(){
+    var warrantyTime: String ? = null
+
+    fun warranty(wTime:String){
+        warrantyTime = wTime
+    }
+    fun warrantyCall(){
+        println("Warranty Information")
+        println("This mouse warranty valid for $warrantyTime")
+        println()
+    }
+}
+//  End Mouse Class
+
+
+
+//  Vivo Y21 Mobile Specification
+
+class mobileDetails(){
+    val name:String ? = null
+    val model:String ? = null
+
+    fun callMobileDetails(name: String, model:String){
+        println("Your mobile name is $name Model $model")
+        println()
+    }
+}
+
+class price(){
+    var  mobilePrice = "15990tk BDT"
+    fun priceCall(){
+        println("Price of VIVO Y21 is $mobilePrice")
+        println()
+    }
+}
+
+class basicSpecification(){
+    val processor = "Helio P35"
+    val ram = "4 GB"
+    val rom = "64 GB"
+    val color = "Metallic Blue,Diamond Glow"
+    val fastCharging = "18W"
+    val operatingSystem = "Funtouch OS 11.1"
+
+    fun basicSpecificationCall(){
+        println("Basic Specification")
+        println("Processor: $processor\nRAM: $ram\nROM: $rom\nColor: $color\nFast Charging: $fastCharging\nOperating System: $operatingSystem")
+    }
+}
+
+
+//  Vivo Y21 Mobile Specification
+
+
+
+
+
